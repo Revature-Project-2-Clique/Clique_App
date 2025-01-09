@@ -26,7 +26,6 @@ const LoginComponent = () => {
 
   return (
     <form onSubmit={handleLogin} className="mt-8 space-y-6">
-      <h3 className="text-gray-800 text-2xl font-bold">Sign In</h3>
       <div>
         <label htmlFor="username" className="text-gray-800 text-xs block mb-2">
           Username
@@ -58,7 +57,7 @@ const LoginComponent = () => {
       <button
         type="submit"
         className="w-full shadow-xl py-2.5 px-4 text-sm tracking-wide
-                   rounded-md text-white bg-blue-600 hover:bg-blue-700
+                   rounded-md text-white bg-[#002e74] hover:bg-[#004dbd]
                    focus:outline-none"
       >
         Login

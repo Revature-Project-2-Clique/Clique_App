@@ -57,9 +57,15 @@ const ConnectionManagement = ({displayUser, getFollowers, getFollowing}) => {
 
     return (
         <>
-          <button onClick={()=>{submitHandler()}}>
+            <button 
+            className={`w-full shadow-xl py-2.5 px-4 text-sm tracking-wide rounded-md text-white focus:outline-none ${connection 
+                ? "bg-[#002e74] hover:bg-[#004dbd]" 
+                : "bg-[#004dbd] hover:bg-[#002e74]"
+            }`}
+            onClick={() => { submitHandler() }}
+            >
             {connection ? "Unfollow" : "Follow"}
-          </button>
+            </button>
         </>
       );
     

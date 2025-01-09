@@ -10,10 +10,9 @@ import Feed from './components/post-components/Feed';
 function App() {
   return (
     <UserProvider>
+      <div className="font-exo">
       <Router>
-          <div className="App">
             <Navbar/>
-          </div>
           <Routes>
             <Route path ="/" element={<LandingPage />}/>
             <Route path="/user/:id" element={<UserProfileComponent />} />
@@ -21,6 +20,7 @@ function App() {
             <Route path="/explore" element={<Feed explore={true}/>} />
           </Routes>
         </Router>
+        </div>
     </UserProvider>
   );
 }
