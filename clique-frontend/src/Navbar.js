@@ -11,12 +11,15 @@ const Navbar = () => {
 
   return (
     <header className="flex py-3 px-4 sm:px-10 bg-white min-h-[65px] tracking-wide relative z-50">
+      
       <div className="flex flex-wrap items-center gap-4 max-w-screen-xl mx-auto w-full">
+      <Link to="/" >
         <img
           src={banner}
           className="w-auto h-9"
           alt="banner"
         />
+        </Link>
           {/* Conditional Navigation Links for Logged-in Users */}
           
         {user && (
